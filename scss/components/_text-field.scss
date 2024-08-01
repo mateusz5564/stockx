@@ -1,0 +1,15 @@
+.text-field {
+  &__input {
+    color: var(--green-800);
+    padding: var(--spacing-sm);
+    font-size: var(--body1);
+    border: 1px solid var(--gray-300);
+    border-radius: 5px;
+    outline-color: var(--green-800);
+    width: 100%;
+
+    &::placeholder {
+      color: var(--gray-500);
+    }
+  }
+}
