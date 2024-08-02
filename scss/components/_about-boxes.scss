@@ -1,0 +1,44 @@
+.about-boxes {
+  margin-top: var(--spacing-xxl);
+
+  &__heading {
+    line-height: 1;
+    margin-bottom: var(--spacing-xl);
+  }
+
+  &__main-heading {
+    color: var(--green-800);
+    font-size: var(--heading2);
+    display: block;
+  }
+
+  &__secondary-heading {
+    color: var(--green-500);
+    font-size: var(--body1);
+    margin-top: var(--spacing-xs);
+    display: block;
+  }
+
+  &__card {
+    margin-bottom: var(--spacing-xxl);
+  }
+
+  &__card-text {
+    color: var(--green-900);
+    margin-top: var(--spacing-xl);
+  }
+
+  &__card-title {
+    font-size: var(--heading3);
+    line-height: 1;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  &__card-title-accent {
+    color: var(--green-500);
+  }
+
+  &__card-paragraph {
+    margin-bottom: var(--spacing-xs);
+  }
+}
