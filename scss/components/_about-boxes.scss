@@ -1,3 +1,5 @@
+@use "../variables/breakpoints" as b;
+
 .about-boxes {
   margin-top: var(--spacing-xxl);
 
@@ -8,8 +10,12 @@
 
   &__main-heading {
     color: var(--green-800);
-    font-size: var(--heading2);
+    font-size: var(--heading3);
     display: block;
+
+    @media (min-width: b.$breakpoint-sm) {
+      font-size: var(--heading2);
+    }
   }
 
   &__secondary-heading {
@@ -29,9 +35,13 @@
   }
 
   &__card-title {
-    font-size: var(--heading3);
+    font-size: var(--heading4);
     line-height: 1;
     margin-bottom: var(--spacing-lg);
+
+    @media (min-width: b.$breakpoint-sm) {
+      font-size: var(--heading3);
+    }
   }
 
   &__card-title-accent {

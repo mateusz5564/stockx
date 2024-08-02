@@ -1,12 +1,19 @@
+@use "../variables/breakpoints" as b;
+
 .order {
   &__heading {
     color: var(--green-900);
     line-height: 1;
+    padding-top: var(--spacing-md);
   }
 
   &__main-heading {
-    font-size: var(--heading1);
+    font-size: var(--heading3);
     display: block;
+
+    @media (min-width: b.$breakpoint-sm) {
+      font-size: var(--heading1);
+    }
   }
 
   &__secondary-heading {
@@ -19,9 +26,13 @@
 
 .order-form {
   margin-top: var(--spacing-lg);
-  padding: var(--spacing-lg);
+  padding: var(--spacing-md);
   border: 1px solid var(--gray-100);
   border-radius: 15px;
+
+  @media (min-width: b.$breakpoint-sm) {
+    padding: var(--spacing-lg);
+  }
 
   &__title {
     color: var(--green-800);

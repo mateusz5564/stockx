@@ -84,10 +84,16 @@ body {
 .order__heading {
   color: var(--green-900);
   line-height: 1;
+  padding-top: var(--spacing-md);
 }
 .order__main-heading {
-  font-size: var(--heading1);
+  font-size: var(--heading3);
   display: block;
+}
+@media (min-width: 40rem) {
+  .order__main-heading {
+    font-size: var(--heading1);
+  }
 }
 .order__secondary-heading {
   display: block;
@@ -98,9 +104,14 @@ body {
 
 .order-form {
   margin-top: var(--spacing-lg);
-  padding: var(--spacing-lg);
+  padding: var(--spacing-md);
   border: 1px solid var(--gray-100);
   border-radius: 15px;
+}
+@media (min-width: 40rem) {
+  .order-form {
+    padding: var(--spacing-lg);
+  }
 }
 .order-form__title {
   color: var(--green-800);
@@ -208,8 +219,13 @@ body {
 }
 .about-boxes__main-heading {
   color: var(--green-800);
-  font-size: var(--heading2);
+  font-size: var(--heading3);
   display: block;
+}
+@media (min-width: 40rem) {
+  .about-boxes__main-heading {
+    font-size: var(--heading2);
+  }
 }
 .about-boxes__secondary-heading {
   color: var(--green-500);
@@ -225,9 +241,14 @@ body {
   margin-top: var(--spacing-xl);
 }
 .about-boxes__card-title {
-  font-size: var(--heading3);
+  font-size: var(--heading4);
   line-height: 1;
   margin-bottom: var(--spacing-lg);
+}
+@media (min-width: 40rem) {
+  .about-boxes__card-title {
+    font-size: var(--heading3);
+  }
 }
 .about-boxes__card-title-accent {
   color: var(--green-500);
@@ -240,7 +261,7 @@ body {
   color: var(--green-900);
   font-size: var(--caption);
   background-color: var(--gray-50);
-  padding: var(--spacing-xl) var(--spacing-md);
+  padding: var(--spacing-lg) var(--spacing-md);
 }
 .faq__list {
   display: flex;
@@ -251,6 +272,24 @@ body {
   font-size: var(--body2);
   font-weight: bold;
   margin-bottom: var(--spacing-xxs);
+}
+
+.credit-cards {
+  padding: var(--spacing-md) 0;
+}
+.credit-cards__heading {
+  font-size: var(--body2);
+  margin-bottom: var(--spacing-xxs);
+  text-align: center;
+}
+.credit-cards__image {
+  height: 2.5rem;
+}
+.credit-cards__img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0 auto;
 }
 
 .sr-only {
@@ -266,5 +305,5 @@ body {
 }
 
 .container {
-  padding: var(--spacing-md);
+  padding: 0 var(--spacing-md);
 }/*# sourceMappingURL=style.css.map */

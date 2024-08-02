@@ -1,0 +1,19 @@
+.credit-cards {
+  padding: var(--spacing-md) 0;
+
+  &__heading {
+    font-size: var(--body2);
+    margin-bottom: var(--spacing-xxs);
+    text-align: center;
+  }
+
+  &__image {
+    height: 2.5rem;
+  }
+
+  &__img {
+    height: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+}
