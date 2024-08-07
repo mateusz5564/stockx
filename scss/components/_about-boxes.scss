@@ -6,6 +6,10 @@
   &__heading {
     line-height: 1;
     margin-bottom: var(--spacing-xl);
+
+    @media (min-width: b.$breakpoint-sm) {
+      text-align: center;
+    }
   }
 
   &__main-heading {
@@ -27,11 +31,33 @@
 
   &__card {
     margin-bottom: var(--spacing-xxl);
+
+    @media (min-width: b.$breakpoint-md) {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-xl);
+    }
   }
 
   &__card-text {
     color: var(--green-900);
     margin-top: var(--spacing-xl);
+
+    @media (min-width: b.$breakpoint-md) {
+      flex: 1;
+    }
+  }
+
+  &__card-image {
+    @media (min-width: b.$breakpoint-md) {
+      flex: 1;
+    }
+
+    &--reversed-order {
+      @media (min-width: b.$breakpoint-md) {
+        order: 2;
+      }
+    }
   }
 
   &__card-title {

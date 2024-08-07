@@ -16,52 +16,54 @@
     <main>
       <div class="container">
         <section class="order">
-          <h1 class="order__heading">
-            <span class="order__main-heading">Chance to win a StockX Mystery Box today!</span>
-            <span class="order__secondary-heading"
-              >Unleash the Excitement of Mystery Electronics</span
-            >
-          </h1>
+          <div>
+            <h1 class="order__heading">
+              <span class="order__main-heading">Chance to win a StockX Mystery Box today!</span>
+              <span class="order__secondary-heading"
+                >Unleash the Excitement of Mystery Electronics</span
+              >
+            </h1>
 
-          <div class="order-form">
-            <h2 class="order-form__title">Enter details</h2>
-            <form class="order-form__form">
-              <div class="order-form__inputs">
-                <div class="text-field order-form__text-field">
-                  <label class="text-field__label sr-only">First name</label>
-                  <input type="text" class="text-field__input" placeholder="First name" />
+            <div class="order-form">
+              <h2 class="order-form__title">Enter details</h2>
+              <form class="order-form__form">
+                <div class="order-form__inputs">
+                  <div class="text-field order-form__text-field order-form__text-field--half-width">
+                    <label class="text-field__label sr-only">First name</label>
+                    <input type="text" class="text-field__input" placeholder="First name" />
+                  </div>
+                  <div class="text-field order-form__text-field order-form__text-field--half-width">
+                    <label class="text-field__label sr-only">Last name</label>
+                    <input type="text" class="text-field__input" placeholder="Last name" />
+                  </div>
+                  <div class="text-field order-form__text-field">
+                    <label class="text-field__label sr-only">Street</label>
+                    <input type="text" class="text-field__input" placeholder="Street" />
+                  </div>
+                  <div class="text-field order-form__text-field order-form__text-field--half-width">
+                    <label class="text-field__label sr-only">Postal code</label>
+                    <input type="text" class="text-field__input" placeholder="Postal code" />
+                  </div>
+                  <div class="text-field order-form__text-field order-form__text-field--half-width">
+                    <label class="text-field__label sr-only">City</label>
+                    <input type="text" class="text-field__input" placeholder="City" />
+                  </div>
+                  <div class="text-field order-form__text-field">
+                    <label class="text-field__label sr-only">Phone number</label>
+                    <input type="text" class="text-field__input" placeholder="Phone number" />
+                  </div>
+                  <div class="text-field order-form__text-field">
+                    <label class="text-field__label sr-only">Email</label>
+                    <input type="text" class="text-field__input" placeholder="Email" />
+                  </div>
                 </div>
-                <div class="text-field order-form__text-field">
-                  <label class="text-field__label sr-only">Last name</label>
-                  <input type="text" class="text-field__input" placeholder="Last name" />
-                </div>
-                <div class="text-field order-form__text-field">
-                  <label class="text-field__label sr-only">Street</label>
-                  <input type="text" class="text-field__input" placeholder="Street" />
-                </div>
-                <div class="text-field order-form__text-field">
-                  <label class="text-field__label sr-only">Postal code</label>
-                  <input type="text" class="text-field__input" placeholder="Postal code" />
-                </div>
-                <div class="text-field order-form__text-field">
-                  <label class="text-field__label sr-only">City</label>
-                  <input type="text" class="text-field__input" placeholder="City" />
-                </div>
-                <div class="text-field order-form__text-field">
-                  <label class="text-field__label sr-only">Phone number</label>
-                  <input type="text" class="text-field__input" placeholder="Phone number" />
-                </div>
-                <div class="text-field order-form__text-field">
-                  <label class="text-field__label sr-only">Email</label>
-                  <input type="text" class="text-field__input" placeholder="Email" />
-                </div>
+                <button type="submit" class="order-form__btn button">Proceed to payment</button>
+              </form>
+              <div class="order-logos">
+                <img src="./img/mcafee.png" alt="McAfee logo" />
+                <img src="./img/truste.png" alt="Truste logo" />
+                <img src="./img/256bit.png" alt="256 bit encryption logo" />
               </div>
-              <button type="submit" class="order-form__btn button">Proceed to payment</button>
-            </form>
-            <div class="order-logos">
-              <img src="./img/mcafee.png" alt="McAfee logo" />
-              <img src="./img/truste.png" alt="Truste logo" />
-              <img src="./img/256bit.png" alt="256 bit encryption logo" />
             </div>
           </div>
 
@@ -119,8 +121,8 @@
               </div>
             </div>
             <div class="about-boxes__card">
-              <div class="about-boxes__card-image">
-                <img src="./img/about-1.png" alt="" />
+              <div class="about-boxes__card-image about-boxes__card-image--reversed-order">
+                <img src="./img/about-2.png" alt="" />
               </div>
               <div class="about-boxes__card-text">
                 <h3 class="about-boxes__card-title">Why is everyone buzzing about these boxes?</h3>
@@ -141,38 +143,41 @@
       </div>
 
       <section class="faq">
-        <h3 class="sr-only">Frequently asked questions</h3>
-        <dl class="faq__list">
-          <div class="faq__question-wrapper">
-            <dt class="faq__question">How can I win?</dt>
-            <dd class="faq__answer">
-              Thanks to your membership, you also participate in our contest to win the iPhone15. We
-              sellect a winner among every 600 participants. The next winner will be selected on
-              06.10.2023, and will be notified directly by e-mail. If the reward is out of stock,
-              the winner will receive a similar product of equal or greater value instead.
-            </dd>
-          </div>
-          <div class="faq__question-wrapper">
-            <dt class="faq__question">No hidden fees?</dt>
-            <dd class="faq__answer">
-              We ensure that our members are provided with a detailed history of transactions so
-              that they know exactly what they are paying for. Credit card information is only
-              required to facilitate future purchases. There will be no charges on your credit card
-              statement if you do not upgrade to PREMIUM membership and do not make a purchase.
-            </dd>
-          </div>
-          <div class="faq__question-wrapper">
-            <dt class="faq__question">Why do we need your billing information?</dt>
-            <dd class="faq__answer">
-              By joining this service, you will receive a 5-day trial of our partner's program. If
-              you continue with a subscription beyond the 5-day trial period, you will be charged an
-              amount on your credit card which varies depending on the choice of the tariff. When
-              your contribution is deducted from your credit card or other payment method, you will
-              have access to these services which are reserved exclusively for members of our
-              partner's website.
-            </dd>
-          </div>
-        </dl>
+        <div class="faq__content">
+          <h3 class="sr-only">Frequently asked questions</h3>
+          <dl class="faq__list">
+            <div class="faq__question-wrapper">
+              <dt class="faq__question">How can I win?</dt>
+              <dd class="faq__answer">
+                Thanks to your membership, you also participate in our contest to win the iPhone15.
+                We sellect a winner among every 600 participants. The next winner will be selected
+                on 06.10.2023, and will be notified directly by e-mail. If the reward is out of
+                stock, the winner will receive a similar product of equal or greater value instead.
+              </dd>
+            </div>
+            <div class="faq__question-wrapper">
+              <dt class="faq__question">No hidden fees?</dt>
+              <dd class="faq__answer">
+                We ensure that our members are provided with a detailed history of transactions so
+                that they know exactly what they are paying for. Credit card information is only
+                required to facilitate future purchases. There will be no charges on your credit
+                card statement if you do not upgrade to PREMIUM membership and do not make a
+                purchase.
+              </dd>
+            </div>
+            <div class="faq__question-wrapper">
+              <dt class="faq__question">Why do we need your billing information?</dt>
+              <dd class="faq__answer">
+                By joining this service, you will receive a 5-day trial of our partner's program. If
+                you continue with a subscription beyond the 5-day trial period, you will be charged
+                an amount on your credit card which varies depending on the choice of the tariff.
+                When your contribution is deducted from your credit card or other payment method,
+                you will have access to these services which are reserved exclusively for members of
+                our partner's website.
+              </dd>
+            </div>
+          </dl>
+        </div>
       </section>
 
       <div class="container">

@@ -1,6 +1,13 @@
 @use "../variables/breakpoints" as b;
 
 .order {
+  @media (min-width: b.$breakpoint-xl) {
+    display: grid;
+    align-items: center;
+    gap: var(--spacing-md);
+    grid-template-columns: 4fr 6fr;
+  }
+
   &__heading {
     color: var(--green-900);
     line-height: 1;
@@ -46,8 +53,18 @@
 
   &__inputs {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: var(--spacing-md);
+  }
+
+  &__text-field {
+    width: 100%;
+
+    @media (min-width: 35rem) {
+      &--half-width {
+        width: calc(50% - var(--spacing-md) / 2);
+      }
+    }
   }
 
   &__btn {
@@ -66,6 +83,11 @@
 .order-images {
   margin-top: var(--spacing-lg);
   position: relative;
+
+  @media (min-width: b.$breakpoint-xl) {
+    grid-column: 1;
+    grid-row: 1;
+  }
 
   &__price-block {
     position: absolute;
@@ -110,7 +132,7 @@
   &__main {
     width: 100%;
     position: relative;
-    padding-top: 100%; 
+    padding-top: 100%;
   }
 
   &__main-img {
