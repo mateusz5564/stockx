@@ -150,26 +150,62 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 9rem;
-  height: 9rem;
+  width: 6rem;
+  height: 6rem;
+  z-index: 10;
   background-color: var(--green-500);
   border-radius: 50%;
   color: var(--white);
 }
+@media (min-width: 40rem) {
+  .order-images__price-block {
+    width: 9rem;
+    height: 9rem;
+  }
+}
 .order-images__price {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: 500;
   line-height: 1;
 }
+@media (min-width: 40rem) {
+  .order-images__price {
+    font-size: 2.5rem;
+  }
+}
 .order-images__original-price {
   margin-top: var(--spacing-xs);
-  font-size: 0.8rem;
+  font-size: 0.6rem;
+}
+@media (min-width: 40rem) {
+  .order-images__original-price {
+    font-size: 0.8rem;
+  }
+}
+.order-images__main {
+  width: 100%;
+  position: relative;
+  padding-top: 100%;
+}
+.order-images__main-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .order-images__thumbnails {
   margin-top: var(--spacing-md);
   display: flex;
-  justify-content: space-between;
-  gap: var(--spacing-lg);
+  gap: var(--spacing-md);
+  cursor: pointer;
+}
+@media (min-width: 40rem) {
+  .order-images__thumbnails {
+    gap: var(--spacing-lg);
+  }
 }
 .order-images__thumbnail {
   flex: 1;
@@ -179,8 +215,9 @@ body {
 }
 .order-images__thumbnail-img {
   width: 100%;
-  height: 100%;
-  display: block;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .text-field__input {
